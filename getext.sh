@@ -1,6 +1,9 @@
 #!/bin/bash
 NODE=$(which node)
 CURL=$(which curl)
+
+echo "External IP"
+
 if [ ! -z $NODE ] && [ ! -z $CURL ]; then
 	$NODE -e '
 		var json = JSON.parse(json=process.argv[1]);
